@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Speed Controller",
+  "version": "1.3",
+  "description": "Control YouTube video playback speed using '-' and '+' keys, with speed display",
+  "permissions": ["https://www.youtube.com/*", "https://youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
